@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب تصميم شعار - Fusion Pro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>طلب تصميم شعار </h1>
+   <form action="process.php" method="post" enctype="multipart/form-data">
+    <label for="companyName">اسم الشركة</label>
+    <input type="text" id="companyName" name="companyName" required>
+
+    <label for="logoType">نوع الشعار</label>
+    <select id="logoType" name="logoType">
+        <option value="ثلاثي الأبعاد">ثلاثي الأبعاد</option>
+        <option value="مسطح">مسطح</option>
+        <option value="مربع">مربع</option>
+    </select>
+
+    <label for="fontType">نوع الخط</label>
+    <select id="fontType" name="fontType">
+        <option value="السنبلي">السنبلي</option>
+        <option value="النسخ">النسخ</option>
+        <option value="الديواني">الديواني</option>
+        <option value="الرقعة">الرقعة</option>
+        <option value="التجريدي">التجريدي</option>
+        <option value="الثلث">الثلث</option>
+        <option value="الكوفي">الكوفي</option>
+    </select>
+
+    <label for="designElements">ما هي العناصر التي يعجبه وجودها في هذا الشعار؟</label>
+    <textarea id="designElements" name="designElements" rows="3" placeholder="مثل الألوان، الخطوط، الرموز"></textarea>
+
+    <label for="designFocus">هل يريد التركيز على نوع معين من التصميم؟</label>
+    <select id="designFocus" name="designFocus">
+        <option value="حديث">حديث</option>
+        <option value="كلاسيكي">كلاسيكي</option>
+        <option value="ثلاثي الأبعاد">ثلاثي الأبعاد</option>
+        <option value="مسطح">مسطح</option>
+    </select>
+
+    <label for="details">تفاصيل الشعار</label>
+    <textarea id="details" name="details" rows="5" placeholder="اكتب التفاصيل الكاملة للشعار"></textarea>
+
+    <label for="name">اسم العميل</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">رقم الهاتف</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="logoImage">صورة الشعار (اختياري)</label>
+    <input type="file" id="logoImage" name="logoImage">
+
+    <button type="submit">إرسال الطلب</button>
+</form>
+
+<div class="logo-image">
+    <p>شعار شركة Fusion Pro</p>
+    <img src="bbbbb.jpg" alt="شعار شركة Fusion Pro" style="width: 100%; max-width: 300px; display: block; margin: 10px auto;">
+</div>
+
+<div class="footer">
+    <p>إدارة شركة Fusion Pro - مجدي المرقب</p>
+    <a href="https://wa.me/967737311305" target="_blank">تواصل عبر الواتساب</a>
+</div>
